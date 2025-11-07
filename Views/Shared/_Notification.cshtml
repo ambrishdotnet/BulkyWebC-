@@ -1,0 +1,18 @@
+﻿@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Success"]
+    </div>
+}
+@if (TempData["Update"] != null)
+{
+    <div class="alert alert-secondary" role="alert">
+        @TempData["Update"]
+    </div>
+}
+@if (TempData["Delete"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["Delete"]
+    </div>
+}
